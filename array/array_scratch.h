@@ -17,11 +17,8 @@ namespace scratch {
       return storage[i];
     };
 
-    size_type size() const;
-/*
     size_type size() const {
       return N;
     };
-*/
   };
 };
