@@ -20,5 +20,12 @@ namespace scratch {
     size_type size() const {
       return N;
     };
+
+    void fill(T const & v) {
+      for (int i = 0; i < N; ++i) {
+        storage[i] = v; 
+      }
+    }
+
   };
 };
