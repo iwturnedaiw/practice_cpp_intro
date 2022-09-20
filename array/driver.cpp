@@ -26,6 +26,24 @@ int main () {
   std::cout << "a size: " << a.size() << std::endl;
   std::cout << "b size: " << b.size() << std::endl;
 
+  
+  a[0] = 0; a[1] = 1; a[2] = 2; a[3] = 3; a[4] = 4;
+
+  auto itr = a.begin();
+  std::cout << *(itr++) << std::endl;
+  std::cout << *itr << std::endl;
+  std::cout << *(++itr) << std::endl;
+  std::cout << *itr << std::endl;
+
+  auto itr1 = a.end();
+  std::cout << *(--itr1) << std::endl;
+  std::cout << *(itr1--) << std::endl;
+  std::cout << *itr1 << std::endl;
+
+  for (auto itr = a.begin(); itr != a.end(); ++itr) {
+    std::cout << *itr << std::endl;
+  }
+  
 
   return 0;
 }
